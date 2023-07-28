@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Caprasimo&family=Konkhmer+Sleokchher&family=Manrope&family=Vina+Sans&display=swap');
+
+.container {
+    background-color: #fdf5e4;
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .titleContainer {
+    text-align: left;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imageContainer {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .stepsContainer {
+    text-align: left;
+  }
+  
+  ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .btndetails {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: 'Caprasimo', sans-serif;
+    position: relative;
+    font-size: 17px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #006633;
+    color: #006633;
+    text-decoration: none;
+  }
+  
+  .btndetails span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+ }
+ 
+ .btndetails:hover span {
+    color: #ffcb45;
+ }
+ 
+ .btndetails::before,
+ .btndetails::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+ }
+ 
+ .btndetails::before {
+    content: "";
+    background: #ffcb45;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ }
+ 
+ .btndetails:hover::before {
+    transform: translate3d(100%, 0, 0);
+ }
+  
+  /* Estilos responsive */
+  @media (min-width: 768px) {
+    .detailsContainer {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  
+    .titleContainer {
+      flex-basis: 40%;
+      text-align: left;
+    }
+  
+    .contentContainer {
+      flex-basis: 60%;
+      align-items: flex-start;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imageContainer img {
+      max-height: 300px;
+    }
+  }
+
+  .titleDetails {
+    font-family: 'Caprasimo', sans-serif;
+  }

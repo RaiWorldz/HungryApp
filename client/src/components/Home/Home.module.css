@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Caprasimo&family=Konkhmer+Sleokchher&family=Manrope&family=Vina+Sans&display=swap');
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.homeContainer {
+  padding-top: 50px;
+  justify-content: center;
+  background-color: #fdf5e4;
+}
+
+.searchBarContainer {
+  display: flex-wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+
+.inputSearchBar {
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  background: #ede6d6;
+  transition: 0.3s;
+  font-size: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.search {
+  width: 250px;
+}
+
+.inputSearchBar:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #ffcb45,
+    inset -20px -20px 60px #ffcb45;
+  transition: 0.3s;
+}
+
+ .btnsearch {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: 'Caprasimo';
+  position: relative;
+  font-size: 17px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #006633;
+  color: #006633;
+  width: 151px;
+} 
+
+ .btnsearch span {
+  position: relative;
+  transition: color 0.4s;
+}
+
+.btnsearch:hover span {
+  color: #ffcb45;
+}
+
+.btnsearch::before,
+.btnsearch::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.btnsearch::before {
+  content: "";
+  background: #ffcb45;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btnsearch:hover::before {
+  transform: translate3d(100%, 0, 0);
+} 
+
+.logotoHome {
+  background-image: url(../../assets/Hungry\ PNG.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  flex: 1;
+  max-width: 150px;
+}
+
+.logotoHome:hover {
+  transform: scale(1.2);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.newRecipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newRecipe>* {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.select {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #006633;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: 'Caprasimo';
+  position: relative;
+  display: inline-block;
+  font-size: 17px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #006633;
+  color: #006633;
+}
+
+.create span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.create:hover span {
+  color: #ffcb45;
+}
+
+.create::before,
+.create::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.create::before {
+  content: "";
+  background: #ffcb45;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.create:hover::before {
+  transform: translate3d(100%, 0, 0);
+}

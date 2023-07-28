@@ -1,0 +1,41 @@
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdf5e4;
+    padding: 10px;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .pageButton {
+    background-color: #006633;
+    color: #ffffff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  
+  .pageNumber {
+    background-color: #ffcb45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .currentPageNumber {
+    background-color: #006633;
+    color: #ffffff;
+  }
